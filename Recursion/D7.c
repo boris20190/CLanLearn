@@ -3,7 +3,7 @@
 void print_num(int num) {
     if (num >= 1) {
         printf("%d ", num);
-        print_num(--num);
+        return print_num(--num);
     }
 }
 
