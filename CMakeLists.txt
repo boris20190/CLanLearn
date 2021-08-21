@@ -6,5 +6,11 @@ set(CMAKE_C_STANDARD 11)
 add_executable(BaseLearn BaseLearn/LinkList.c)
 add_executable(BubbleSort SortingAlgorithm/BubbleSort.c)
 add_executable(random_number BaseLearn/RandomNumber.c)
-
-
+add_executable(D1 Recursion/D1.c)
+add_executable(D2 Recursion/D2.c)
+add_executable(D3 Recursion/D3.c)
+add_executable(D4 Recursion/D4.c)
+add_executable(D5 Recursion/D5.c)
+add_executable(D6 Recursion/D6.c)
+add_executable(D7 Recursion/D7.c)
+add_executable(D8 Recursion/D8.c)
