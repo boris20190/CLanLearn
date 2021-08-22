@@ -1,14 +1,14 @@
 #include "stdio.h"
 
-int is_prime(int n,int delitel) {
-    if(n<2) {
+int is_prime(int n, int delitel) {
+    if (n < 2) {
         return 0;
     }
-    if(delitel*delitel<=n) {
-        if(n%delitel==0) {
+    if (delitel * delitel <= n) {
+        if (n % delitel == 0) {
             return 0;
         }
-        return is_prime(n,++delitel);
+        return is_prime(n, ++delitel);
     }
     return 1;
 }

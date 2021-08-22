@@ -15,10 +15,10 @@
 */
 void reverse_num(int num) {
     if (num > 1) {
-        reverse_num(num - 1);
-    }
-    printf("%d ", num);
-}
+        reverse_num(num - 1);//这里不能写成--num。因为如果是--num则为先-1后压栈，最终入栈的数依次为4 3 2 1。最后num=1直接输出1
+    }                             //因此如果输入5，则最终输出结果不为1 2 3 4 5，而是1 1 2 3 4
+    printf("%d ", num);           //num-1则会先压栈后-1进入下一次循环。
+}                                 //肯定不能是num--，因为这意味着先进行递归后-1，从而永远是num进入死循环
 
 int main() {
     int num;
