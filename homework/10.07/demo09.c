@@ -10,5 +10,5 @@ int main() {
         sum += num;
         count++;
     }
-    printf("%d\n",sum/count);
+    printf("%f\n",1.0*sum/count);
 }
