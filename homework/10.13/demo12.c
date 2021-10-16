@@ -10,6 +10,7 @@ int main() {
             fl = 0;
             max = num;
             cont = 0;
+            save_cont = 0;
         } else {
             cont++;
             if(max==num) {
