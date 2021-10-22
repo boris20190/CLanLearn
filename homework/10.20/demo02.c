@@ -14,7 +14,10 @@ int main() {
         }
     }
 
-
+    //用指针的加减来实现二维数组的每行排序
+    for (int i = 0; i < m * n; i+=n) {
+        bubble_sort(*arr+i,n);
+    }
 
     for (int i = 0; i < m; ++i) {
         for (int j = 0; j < n; ++j) {
