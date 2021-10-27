@@ -2,10 +2,10 @@
 
 #define N 10
 
-void change_sign (int *p) {
+void change_sign(int *p) {
     for (int i = 0; i < N; ++i) {
-        if(*(p+i)<0) {
-            *(p+i) *= -1;
+        if (*(p + i) < 0) {
+            *(p + i) *= -1;
         }
     }
 }

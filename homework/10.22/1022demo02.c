@@ -5,13 +5,13 @@
 void insertion_sort(int *p, int len) {
     int i, j, key;
     for (i = 1; i < len; i++) {
-        key = *(p+i);
+        key = *(p + i);
         j = i - 1;
-        while ((j >= 0) && (*(p+j) > key)) {
-            *(p+j+1) = *(p+j);
+        while ((j >= 0) && (*(p + j) > key)) {
+            *(p + j + 1) = *(p + j);
             j--;
         }
-        *(p+j+1) = key;
+        *(p + j + 1) = key;
     }
 }
 
