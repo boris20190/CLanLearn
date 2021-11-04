@@ -1,12 +1,9 @@
 #include "stdio.h"
 
-void compression(int arr[],int n) {
-    int temp = arr[0];
-    printf("%d ",arr[0]);
-    for (int i = 1; i < n; ++i) {
-        if(arr[i]!=temp) {
+void delete(int arr[],int n,int x) {
+    for (int i = 0; i < n; ++i) {
+        if(arr[i]!=x) {
             printf("%d ",arr[i]);
-            temp = arr[i];
         }
     }
 }
@@ -15,12 +12,14 @@ int main() {
     int n;
     printf("Put in n:\n");
     scanf("%d",&n);
+    int x;
+    printf("Put in x:\n");
+    scanf("%d",&x);
     int arr[n];
     printf("Put in elements:\n");
     for (int i = 0; i < n; ++i) {
         scanf("%d",&arr[i]);
     }
-    compression(arr,n);
-    printf("\n");
+    delete(arr,n,x);
     return 0;
 }
